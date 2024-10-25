@@ -59,9 +59,9 @@
     - **Barra de Pesquisa que faça filtragem.** ✅
     - **Listar os contatos exibindo: SEQUENCIAL (ID), NOME, TELEFONE E IDADE.** ✅
     - **Ao lado de cada contato, fornecer três botões de ação:** ✅
-      - **Exibir Endereço**: Ao clicar, abrir um modal com o endereço do contato.
-      - **Editar**: Permitir editar as informações do contato.
-      - **Deletar**: Remover o contato da lista.
+      - **Exibir Endereço**: Ao clicar, abrir um modal com o endereço do contato. ✅
+      - **Editar**: Permitir editar as informações do contato. ✅
+      - **Deletar**: Remover o contato da lista. ✅
     - **Implementar paginação para a listagem.** ✅
     - **Botão para cadastrar novos contatos.** ✅
 
@@ -85,6 +85,16 @@ chmod +x build_container.sh start_container.sh dependencies.sh
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
+
+⚠️ **Cuidado:** 
+
+Antes de prosseguir, certifique-se que as seguintes portas não estão sendo utilizadas:
+
+- **localhost:8000**
+- **localhost:5173**
+- **localhost:5432**
+
+Se caso estejam sendo utilizadas, considere alterar tais portas no arquivo `docker-compose.yml` para valores que estejam disponíveis.
 
 **Então**
 ```bash
@@ -110,4 +120,4 @@ Após a imagem acima aparecer no terminal:
 
 🥳 
 
-Já pode entrar no navegador pela URL indicada no terminal pelo script `start_container.sh`, nesse caso `http://0.0.0.0:80`
+Acesse no navegador -> `localhost:8000`
