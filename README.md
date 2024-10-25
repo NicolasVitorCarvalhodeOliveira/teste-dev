@@ -42,3 +42,72 @@
 ### Entrega
 
 - Tempo de execução: 5 dias corridos (o tempo será contabilizado a partir da criação do Fork).
+
+## SOLUÇÃO (Entregue em: 25/10/2024)
+
+[Video de Apresentação da Solução](https://youtu.be/GVagGsuyJ-U)
+[![Assista ao vídeo](./githubAssets/print_do_sistema.png)](https://youtu.be/GVagGsuyJ-U)
+
+
+1. Requisitos Não-Funcionais Atendidos:
+    - **Fork PÚBLICO do Repositório:** ✅
+    - **Docker (ambiente)** ✅
+    - **Laravel 11 (Backend)** ✅
+    - **Framework qualquer [React] (Frontend)** ✅
+
+2. Requisitos Funcionais Atendidos:
+    - **Barra de Pesquisa que faça filtragem.** ✅
+    - **Listar os contatos exibindo: SEQUENCIAL (ID), NOME, TELEFONE E IDADE.** ✅
+    - **Ao lado de cada contato, fornecer três botões de ação:** ✅
+      - **Exibir Endereço**: Ao clicar, abrir um modal com o endereço do contato.
+      - **Editar**: Permitir editar as informações do contato.
+      - **Deletar**: Remover o contato da lista.
+    - **Implementar paginação para a listagem.** ✅
+    - **Botão para cadastrar novos contatos.** ✅
+
+### Passos para replicar o resultado
+
+O Docker é pré-requisito. Serão utilizados 3 scripts presentes no repositório:
+
+1. `build_container.sh` - Criar a imagem do container.
+2. `start_container.sh` - Iniciar o container.
+3. `dependencies.sh` - Instalar dependências adicionais no container.
+
+
+Certifique-se de que os scripts possuem permissão de execução:
+
+**Linux**
+```bash
+chmod +x build_container.sh start_container.sh dependencies.sh
+```
+
+**Windows**
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+**Então**
+```bash
+./build_container.sh
+```
+
+No meu computador ele demorou <= 400s para rodar o comando `build_container.sh`
+
+```bash
+./start_container.sh
+```
+
+![start_container.sh](./githubAssets/start_container.png)
+
+Após a imagem acima aparecer no terminal, abra um novo terminal **MANTENDO** esse último aberto e rodando o servidor.
+
+```bash
+./dependencies.sh
+```
+![depedencies.sh](./githubAssets/dependencies.png)
+
+Após a imagem acima aparecer no terminal:
+
+🥳 
+
+Já pode entrar no navegador pela URL indicada no terminal pelo script `start_container.sh`, nesse caso `http://0.0.0.0:80`
