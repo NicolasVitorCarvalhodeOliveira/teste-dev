@@ -43,10 +43,10 @@
 
 - Tempo de execução: 5 dias corridos (o tempo será contabilizado a partir da criação do Fork).
 
-## SOLUÇÃO (Entregue em: 25/10/2024)
+## SOLUÇÃO (Finalizada em: 25/10/2024)
 
-[Video de Apresentação da Solução](https://youtu.be/GVagGsuyJ-U)
-[![Assista ao vídeo](./githubAssets/print_do_sistema.png)](https://youtu.be/GVagGsuyJ-U)
+[Video de Apresentação da Solução](https://youtu.be/rluyyKRwjAc)
+[![Assista ao vídeo](./githubAssets/print_do_sistema.png)](https://youtu.be/rluyyKRwjAc)
 
 
 1. Requisitos Não-Funcionais Atendidos:
